@@ -23,6 +23,4 @@ public class TestConfigRestController {
         return Map.of("a",a,"b",b,"c",c);
     }
 }
-
-
  */
