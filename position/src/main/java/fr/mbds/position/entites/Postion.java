@@ -16,6 +16,7 @@ import java.util.List;
 @Entity
 public class Postion {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Ajoutez cette ligne
     private Long id;
 
     private String name ;

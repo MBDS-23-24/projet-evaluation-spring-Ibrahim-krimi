@@ -9,7 +9,7 @@ public class PositionMapper {
 
     public PostionDTO toDTO(Postion position) {
         // Assurez-vous que la liste des identifiants de compétences est correctement gérée
-        return new PostionDTO(position.getId(), position.getName(), position.getAverageSalary(), position.getSkillIds());
+        return new PostionDTO(position.getId(), position.getName(), position.getAverageSalary(), position.getSkillIds(),null);
     }
 
     public Postion toEntity(PostionDTO positionDTO) {
