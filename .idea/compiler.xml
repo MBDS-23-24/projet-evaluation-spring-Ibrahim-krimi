@@ -10,12 +10,14 @@
         <module name="position" />
         <module name="gateway" />
         <module name="discovery" />
+        <module name="configServer" />
         <module name="skill" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configServer" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="position" options="-parameters" />
