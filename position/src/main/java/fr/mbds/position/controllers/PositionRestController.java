@@ -23,14 +23,14 @@ public class PositionRestController {
     // Récupère toutes les positions
     @GetMapping
     public ResponseEntity<List<PostionDTO>> findAll() {
-        List<PostionDTO> positions = positionService.findAll();
+        List<PostionDTO> positions = positionService.getAllPositionsWithSkills();
         return ResponseEntity.ok(positions); // Retourne la liste des positions avec un statut 200 OK
     }
 
     // Récupère une position spécifique par son ID
     @GetMapping("/{id}")
     public ResponseEntity<PostionDTO> findById(@PathVariable Long id) {
-        PostionDTO positionDTO = positionService.findById(id);
+        PostionDTO positionDTO = positionService.getPositionByIdWithSkills(id);
         if (positionDTO != null) {
             return ResponseEntity.ok(positionDTO); // Retourne la position avec un statut 200 OK
         } else {

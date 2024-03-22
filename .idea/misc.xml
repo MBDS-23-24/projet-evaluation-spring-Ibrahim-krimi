@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/position/pom.xml" />
         <option value="$PROJECT_DIR$/skill/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/config/pom.xml" />
       </list>
     </option>
   </component>

@@ -7,4 +7,6 @@ import java.util.List;
 public interface IPostionService {
     List<PostionDTO> findAll();
     PostionDTO findById(Long id);
+    PostionDTO  getPositionByIdWithSkills(Long id);
+    List<PostionDTO>   getAllPositionsWithSkills();
 }
